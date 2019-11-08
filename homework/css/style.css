@@ -1,0 +1,33 @@
+blockquote{
+    color: green;
+}
+a{
+   color: #009ceb;
+}
+
+main{
+
+}
+main section{}
+main .sectionBuild-inContent{
+
+}
+.sectionBuild-inContent{
+
+}
+article ol li{
+
+}
+article hr{
+    border: 5px solid  #009ceb;
+}
+div ul li{
+
+}
+div h1{
+    color: #009ceb;
+}
+.sectionDescription blockquote{
+    padding-left:20px;
+    border-left: 10px solid green;
+}
