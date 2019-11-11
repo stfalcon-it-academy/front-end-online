@@ -1,0 +1,30 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+header{
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+
+}
+.header-title{
+    font-size: 24px;
+}
+.header-tags{
+
+    padding-top: 16px;
+}
+.tag{
+    color: #999999;
+}
+.tag-link{
+    color: #666666;
+    text-decoration: none;
+}
+.tag,tag-link{
+    font-size: 14px;
+}
+.tag-link:hover{
+    color: #009ceb;
+}
