@@ -6,20 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<body>
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-<h1>Основи HTML</h1>
-<h2>Контент і семантика</h2>
-<blockquote>Семантика — розділ мовознавства, пов'язаний з лексикологією; вивчає значення (теж у діахронному, іст. перекрої) слів і їх складових частин, словосполук і фразеологізмів.</blockquote>
+<body> <!--body, html body, html > body.-->
 
-<h3>Теги і атрибути</h3>
-<h4>Атрибути</h4>
-    <ol>
-        <li><code>id</code></li>
-        <li><code>class</code></li>
+<h1>Основи HTML</h1> <!--h1, html h1, html body h1, body > h1-->
+
+<h2>Контент і семантика</h2> <!--h2, html body h2, h1 ~ h2, h1 + h2, body h2, body > h2-->
+
+<blockquote>Семантика — розділ мовознавства, пов'язаний з лексикологією; вивчає значення (теж у діахронному, іст. перекрої) слів і їх складових частин, словосполук і фразеологізмів.</blockquote> <!--blockquote, body blockquote, body > blockquote, html body blockquote, h2 ~ blockquote, h2 + blockquote-->
+
+<h3>Теги і атрибути</h3> <!--h3, html body h3, h2 ~ h3, h2 + h3, body h3, body > h3-->
+<h4>Атрибути</h4> <!--h4, html body h4, h3 ~ h4, h3 + h4, body h4, body > h4-->
+    <ol> <!--ol, h4 ~ ol, h4 + ol, body > ol, body ol, html body ol-->
+        <li><code>id</code></li> <!--li, h4 ol li, ol > li, ol li, code, li > code, li code, ol li code-->
+        <li><code>class</code></li> <!--li + li, li ~ li, li, h4 ol li, ol > li, ol li, code, li > code, li code, ol li code-->
         <li><code>title</code></li>
         <li><code>lang</code></li>
-        <li>s<code>tyle</code></li>
+        <li><code>style</code></li>
     </ol>
 <h4>Документ і метадані</h4>
     <ol>
@@ -106,7 +111,7 @@
     </ol>
 
 <h4>Валідація</h4>
-<hr>
+<hr> <!--hr, body hr, html body hr, body > hr-->
 <h2>Домашнє завдання</h2>
     <ol>
         <li>Відтворити даний зміст уроку на HTML.</li>
@@ -115,7 +120,7 @@
 <hr>
 <h2>Лінки</h2>
     <ol>
-        <li><a href="http://htmlbook.ru/samhtml">Самоучитель HTML</a></li>
+        <li><a href="http://htmlbook.ru/samhtml">Самоучитель HTML</a></li> a[href], a[href*="http:"], a[href^="http"], a[href$="html"]
         <li><a href="http://htmlbook.ru/html">Справочник по HTML﻿</a></li>
         <li><a href="http://htmlbook.ru/html5">HTML5﻿</a></li>
         <li><a href="https://fuckingwebsite.ru/">Это — грёбаный сайт.</a></li>
