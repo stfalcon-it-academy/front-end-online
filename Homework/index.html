@@ -2,132 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Girard Avenue Residence</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.733; /*1.625rem;*/
+        }
+    </style>
 </head>
-
-<body> <!--body, html body, html > body.-->
-
-<h1>Основи HTML</h1> <!--h1, html h1, html body h1, body > h1-->
-
-<h2>Контент і семантика</h2> <!--h2, html body h2, h1 ~ h2, h1 + h2, body h2, body > h2-->
-
-<blockquote>Семантика — розділ мовознавства, пов'язаний з лексикологією; вивчає значення (теж у діахронному, іст. перекрої) слів і їх складових частин, словосполук і фразеологізмів.</blockquote> <!--blockquote, body blockquote, body > blockquote, html body blockquote, h2 ~ blockquote, h2 + blockquote-->
-
-<h3>Теги і атрибути</h3> <!--h3, html body h3, h2 ~ h3, h2 + h3, body h3, body > h3-->
-<h4>Атрибути</h4> <!--h4, html body h4, h3 ~ h4, h3 + h4, body h4, body > h4-->
-    <ol> <!--ol, h4 ~ ol, h4 + ol, body > ol, body ol, html body ol-->
-        <li><code>id</code></li> <!--li, h4 ol li, ol > li, ol li, code, li > code, li code, ol li code-->
-        <li><code>class</code></li> <!--li + li, li ~ li, li, h4 ol li, ol > li, ol li, code, li > code, li code, ol li code-->
-        <li><code>title</code></li>
-        <li><code>lang</code></li>
-        <li><code>style</code></li>
-    </ol>
-<h4>Документ і метадані</h4>
-    <ol>
-        <li><code>&lt;!DOCTYPE></code></li>
-        <li><code>&lt;html></code></li>
-        <li><code>&lt;meta></code></li>
-        <li><code>&lt;title></code></li>
-        <li><code>&lt;head></code></li>
-
-    </ol>
-<h4>Структура контенту</h4>
-    <ol>
-        <li><code>&lt;body></code></li>
-        <li><code>&lt;article></code></li>
-        <li><code>&lt;section></code></li>
-        <li><code>&lt;nav></code></li>
-        <li><code>&lt;aside></code></li>
-        <li><code>&lt;h1>, &lt;h2>, &lt;h3>, &lt;h4>, &lt;h5>, &lt;h6></code></li>
-        <li><code>&lt;header></code></li>
-        <li><code>&lt;footer></code></li>
-        <li><code>&lt;address></code></li>
-    </ol>
-<h4>Групування контенту</h4>
-    <ol>
-        <li><code>&lt;p></code></li>
-        <li><code>&lt;hr></code></li>
-        <li><code>&lt;pre></code></li>
-        <li><code>&lt;blockquote></code></li>
-        <li><code>&lt;ol>, &lt;ul>, &lt;li> </code><a href="https://jsfiddle.net/inlen/cr8z9319/">?</a> </li>
-        <li><code>&lt;dl>, &lt;dt>, &lt;dd> </code><a href="https://jsfiddle.net/inlen/Lmvaewe0/">?</a> </li>
-        <li><code>&lt;figure>, &lt;figcaption></code> <a href="https://jsfiddle.net/inlen/h5hkvsqa/">?</a> </li>
-        <li><code>&lt;div></code></li>
-        <li><code>&lt;main></code></li>
-    </ol>
-<h4>Семантика на рівні тексту</h4>
-    <ol>
-        <li><code>&lt;a></code></li>
-        <li><code>&lt;em></code></li>
-        <li><code>&lt;i></code></li>
-        <li><code>&lt;strong></code></li>
-        <li><code>&lt;b></code></li>
-        <li><code>&lt;u></code></li>
-        <li><code>&lt;s></code></li>
-        <li><code>&lt;del></code></li>
-        <li><code>&lt;ins> </code><a href="https://jsfiddle.net/inlen/du4dajLw/">?</a> </li>
-        <li><code>&lt;q></code></li>
-        <li><code>&lt;cite> </code><a href="https://jsfiddle.net/inlen/1fp4euuk/1/">?</a> </li>
-        <li><code>&lt;abbr></code></li>
-        <li><code>&lt;time></code></li>
-        <li><code>&lt;var></code></li>
-        <li><code>&lt;sub>, &lt;sup> </code><a href="https://jsfiddle.net/inlen/5uLw0mac/">?</a> </li>
-        <li><code>&lt;span></code></li>
-        <li><code>&lt;br></code></li>
-        <li><code>&lt;wbr> </code><a href="https://jsfiddle.net/inlen/5uLw0mac/">?</a> </li>
-    </ol>
-<h4>Вбудований контент</h4>
-    <ol>
-        <li><code>&lt;img> </code><a href="https://jsfiddle.net/inlen/cg4p7ozo/">?</a></li>
-        <li><code>&lt;iframe></code></li>
-        <li><code>&lt;embed>, &lt;object> </code><a href="https://jsfiddle.net/inlen/nh5z2qyv/">?</a></li>
-        <li><code>&lt;video> </code><a href="https://jsfiddle.net/inlen/1tdzyeea/">?</a></li>
-        <li><code>&lt;audio></code></li>
-    </ol>
-<h4>Табличні дані</h4>
-    <ol>
-        <li><code>&lt;table> </code><a href="https://jsfiddle.net/inlen/cg4p7ozo/">?</a></li>
-        <li><code>&lt;caption></code></li>
-        <li><code>&lt;tbody></code></li>
-        <li><code>&lt;thead></code></li>
-        <li><code>&lt;tfoot></code></li>
-        <li><code>&lt;tr></code></li>
-        <li><code>&lt;td></code></li>
-        <li><code>&lt;th></code></li>
-    </ol>
-<h4>Форми</h4>
-    <ol>
-        <li><code>&lt;form> </code><a href="https://jsfiddle.net/P3trovichUA/Lyevpwfp/1/">?</a></li>
-        <li><code>&lt;label></code></li>
-        <li><code>&lt;input></code></li>
-        <li><code>&lt;button></code></li>
-        <li><code>&lt;select>, &lt;option></code></li>
-        <li><code>&lt;textarea></code></li>
-        <li><code>&lt;fieldset>, &lt;legend></code></li>
-    </ol>
-
-<h4>Валідація</h4>
-<hr> <!--hr, body hr, html body hr, body > hr-->
-<h2>Домашнє завдання</h2>
-    <ol>
-        <li>Відтворити даний зміст уроку на HTML.</li>
-        <li>Роботу виконати в файлі <code>homework/index.html</code>.</li>
-    </ol>
-<hr>
-<h2>Лінки</h2>
-    <ol>
-        <li><a href="http://htmlbook.ru/samhtml">Самоучитель HTML</a></li> a[href], a[href*="http:"], a[href^="http"], a[href$="html"]
-        <li><a href="http://htmlbook.ru/html">Справочник по HTML﻿</a></li>
-        <li><a href="http://htmlbook.ru/html5">HTML5﻿</a></li>
-        <li><a href="https://fuckingwebsite.ru/">Это — грёбаный сайт.</a></li>
-        <li><a href="https://habrahabr.ru/post/309076/">Недоступный веб: как мы развели такой бардак</a></li>
-        <li><a href="http://frontender.info/dom/">Что такое DOM?</a></li>
-        <li><a href="http://frontender.info/the-art-of-html-semantics-pt1/">Искусство семантики HTML</a></li>
-        <li><a href="http://css-live.ru/articles/ponimanie-semantiki.html">Понимание семантики</a></li>
-    </ol>
+<body>
+    <article>
+        <h1>Girard Avenue Residence</h1>
+        <div class="article_info_main">
+            <address><span class="article_info">by </span> Mary Doe</address>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="article_info">5</span> Comments
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="article_info">Categories:</span> Blogs, Blogs special
+        </div>
+        <div class="article_text">
+            <p>The work of a professional can make all the difference. Whether your home has 10 bedrooms, or your apartment is 800 square feet, it can be tricky to create a cohesive look that is representative of your style.</p>
+            <p>Maecenas arcu elit, aliquet nec convallis vel, rhoncus non augue. Phasellus interdum aliquet metus, egestas vestibulum ex gravida vitae. Quisque maximus velit odio, nec suscipit sem dignissim vel. Cras rhoncus ornare augue et auctor. Nam sagittis molestie enim, aliquet ornare orci. Morbi sit amet risus ante. Curabitur ut tortor iaculis, ultrices metus et, sagittis felis.</p>
+            <p>Ut auctor mauris varius quam bibendum faucibus ut sit amet urna. Pellentesque imperdiet quis libero eget ultrices. Fusce volutpat pretium ante eu vehicula. Sed dapibus id velit vitae imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Donec commodo euismod consequat. In iaculis gravida nisi, at scelerisque lacus dapibus at. Nullam ornare, urna eget aliquet maximus, diam justo commodo sapien, id ultricies mauris elit ultrices orci.</p>
+            <p>Aenean porta, orci a gravida faucibus, nisi magna rhoncus mi, eget vehicula tortor quam sed quam. Fusce quis accumsan nisi. Fusce ac eros lorem. Proin efficitur orci nec quam molestie, eu ultricies massa dictum. Nulla quis ipsum eu ex tincidunt lobortis. Curabitur pretium, lectus et tempus tempus, ex nibh finibus dolor, ac malesuada sapien risus vitae ante. Sed nec massa ex. Praesent odio tellus, pulvinar ut nunc a, ultrices efficitur nunc. Nullam eleifend tincidunt nibh. Morbi vitae sem vel diam faucibus varius ut ac metus. Nunc non risus commodo, bibendum lacus eget, sodales magna. Curabitur bibendum ligula eget nulla tempus vehicula.</p>
+        </div>
+    </article>
 </body>
 </html>
