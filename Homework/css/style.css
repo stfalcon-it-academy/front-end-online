@@ -13,6 +13,21 @@ address{
     font-size: 0.875rem;
 }
 
+.article_info_main > span:before{
+    content: "|";
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.article_info_main a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article_info_main a:hover {
+    text-decoration: underline;
+}
+
 .article_info {
     color: #999999;
     font-size: inherit;
