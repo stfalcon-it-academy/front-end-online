@@ -1,0 +1,139 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #232323;
+    color: white;
+    line-height: 1.5rem;
+}
+
+.top-wide {
+    height: 2.125rem;
+    background-color: #2b2b2b;
+}
+
+.top2{
+    position: relative;
+    margin: 0 auto;
+    width: 1170px;
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #7f7f7f;
+}
+
+.top2 address {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0.34rem;
+    font-style: normal;
+}
+
+.top2 > div {
+    position: absolute;
+    right: 0;
+    top: 0.31rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.top2 a{
+    text-decoration: none;
+    color: #666666;
+}
+
+.head2 {
+    position: relative;
+    margin: 0 auto;
+    width: 1170px;
+    height: 168px;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 31px;
+}
+
+.head2 input {
+    position: absolute;
+    right: 0;
+    top: 31px;
+}
+
+.head2 nav {
+    position: relative;
+    top: 105px;
+}
+
+.bag{
+    position: absolute;
+    display: block;
+    top: 116px;
+    right: 11px;
+}
+
+.counter {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    background-color: #be926f;
+}
+
+.counter div {
+    position: absolute;
+    left: 5px;
+    top: -3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #232323;
+}
+
+nav {
+    font-weight: 400;
+    color: #ffffff;
+}
+
+input[type=text] {
+    box-sizing: border-box;
+    background-color: #232323;
+    border-color: #323232;
+    border-width: 1px;
+    width: 275px;
+    height: 46px;
+    color: #666666;
+    padding-left: 1.56rem;
+    border-style:solid;
+}
+
+input:focus {
+    outline-width: 0;
+}
+
+form button {
+    position: absolute;
+    right: 12px;
+    top: 44px;
+    border: none;
+    background: none;
+    color: inherit;
+    border: none;
+}
+
+.head2 a {
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.head2 a+a{
+    margin-left: 45px;
+}
+
+.head2 a:hover {
+    color: #be926f;
+}
