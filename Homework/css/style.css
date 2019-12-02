@@ -3,7 +3,7 @@ h1 {
     margin-block-end: 0;
 }
 
-address{
+.article_info_main > div{
     font-style: normal;
     display: inline;
 }
