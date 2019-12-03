@@ -10,61 +10,65 @@ img{
     height: auto;
 }
 
+.clear-fix:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
 .content-wrap{
-    max-width: 1170px;
+    width: 1170px;
     margin: 0 auto;
-    position: relative;
 }
 
 header{
     background-color: #232323;
-    height: 200px;
 }
-.header-row-1{
+
+
+.header-top{
     background-color: #2b2b2b;
     height: 2.5rem;
     line-height: 2.5rem;
 }
-.header-row-1 a{
+.header-top a{
     text-decoration: none;
     color: #7f7f7f;
 }
-.header-row-1 a:hover{
+.header-top a:hover{
     color: #9f9f9f;
 }
 
-.header-row-1 span{
+.header-top span{
     color: #4f4f4f;
 }
-.header-right_block{
-    position: absolute;
-    right: 0;
-    top: 0;
+.header-registration{
+    float: right;
 }
-.header-row-2{
+.header-middle{
     height: 7.142rem;
 }
-.content-wrap .logo{
-    position: absolute;
-    top: 30px;
-    left: 0px;
+a.logo{
+    float: left;
+    margin-top: 30px;
 }
 .search{
-    position: absolute;
-    top: 30px;
-    right: 0px;
+    float: right;
+    position: relative;
     outline: 1px solid #323232;
     width: 275px;
     height: 3.214rem;
     line-height: 3.214rem;
+    margin-top: 30px;
 }
 .search input{
-    background-color: rgba(0,0,0,0);
+    background: transparent;
     border: none;
     padding: 15px 0px 15px 25px;
     color: #ffffff;
 }
-.search input:focus{
+.search input:focus,
+.search .search-btn:focus{
     outline: none;
 }
 
@@ -78,16 +82,12 @@ header{
     right: 15px;
 
 }
-.header-row-3{
+.header-bottom{
     height: 4.642rem;
 }
 .nav ul{
     list-style: none;
-    padding: 0;
-    position: absolute;
-    top: -15px;
-    left: 0px;
-
+     padding: 0;
 }
 .nav ul li{
     display: inline-block;
@@ -101,34 +101,55 @@ header{
     font-size: 1.142rem;
     font-weight: 600;
 }
-.nav li a:hover{
+.nav li a:hover,
+.nav li a.active{
     color: #be926f;
 }
-.nav .bag-btn{
-    background: url(../img/bag-ico.png) no-repeat center;
-    border: none;
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    top: -14px;
-    right: 0px;
+nav .header-cart{
+    background: transparent url("../img/bag-ico.png") center center no-repeat;
+    padding: 10px;
+    float: right;
+    height: 22px;
+    width: 18px;
+    position: relative;
+    margin-top: -48px;
 }
+nav .header-cart::before{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    content: attr(data-counter);
+    display: inline-block;
+    line-height: 18px;
+    width: 18px;
+    background-color: #be926f;
+    border-radius: 100%;
+    color: #232323;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+
+}
+
+
 .contact{
     background: #e7e7e7;
     height: 8.357rem;
+    margin-top: 30px;
     line-height: 8.357rem;
-    padding-left: 30px;
 }
 .contact h2{
+    float: left;
     text-transform: uppercase;
     font-size: 2.142rem;
     font-weight: 600;
     color: #232323;
+    margin: 0;
+    margin-left: 30px;
 }
-.contact-right_block{
-    position: absolute;
-    right: 30px;
-    top: 0;
+.contact-choice{
+    float: right;
+    margin-right: 30px;
 }
 .contact a{
     text-transform: uppercase;
