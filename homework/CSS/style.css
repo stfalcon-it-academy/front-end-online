@@ -1,0 +1,33 @@
+body{
+    font-family: 'Gelasio', serif;
+    counter-reset: pages;
+    font-size: 16px;
+}
+p {
+    counter-increment: pages;
+}
+p::before {
+    content: counter(pages);
+}
+
+.element-wrap{
+    margin: 0 auto;
+    max-width: 850px;
+}
+p{
+    display: block;
+    line-height: 1.5rem;
+    background-color: #acc2c0;
+    color: #000000;
+    position: relative;
+    padding-left: 15px;
+}
+p::before{
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 30px;
+    width: 30px;
+    background-color: #f70000;
+    text-align: center;
+}
