@@ -1,139 +1,177 @@
-html {
+.body {
     font-family: 'Montserrat', sans-serif;
 }
+.site-width {
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-header {
+@media (min-width: 1200px){
+    .site-width {
+        max-width: 1170px;
+    }
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header {
     background-color: #232323;
     color: white;
     line-height: 1.5rem;
 }
 
-.top-wide {
-    height: 2.125rem;
+.header__top {
     background-color: #2b2b2b;
-}
-
-.top2{
-    position: relative;
-    margin: 0 auto;
-    width: 1170px;
     font-weight: 300;
     font-size: 0.875rem;
+}
+
+.header__phone {
+    float: left;
+    font-style: normal;
+    margin: 5px 0 5px 0;
     color: #7f7f7f;
 }
 
-.top2 address {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 0.34rem;
-    font-style: normal;
-}
-
-.top2 > div {
-    position: absolute;
-    right: 0;
-    top: 0.31rem;
+.header__login-register {
+    float: right;
+    margin-top: 5px;
     font-weight: 400;
+}
+
+.login-register__link {
+    color: #666;
+}
+
+.login-register__or {
+    color: #3b3b3b;
+    margin: 0 5px 0 5px;
+    font-size: 0.75rem;
+}
+
+.header__logo {
+    float: left;
+    padding-top: 31px;
+}
+
+@media (max-width: 475px) {
+    .header__logo img {
+        display: block;
+        margin: 0 auto;
+    }
+    .header__logo {
+        float: none;
+    }
+}
+
+.header__search {
+    float: right;
+    margin-top: 31px;
+}
+
+.header__search input[type=search] {
+    box-sizing: border-box;
+    background-color: #232323;
+    width: 228px;
     color: #666666;
+    font-size: 0.8125rem;
+    padding: 15px;
+    padding-left: 24px;
+    border: 1px #323232 solid;
+    float: left;
+    border-right: none;
 }
 
-.top2 a{
-    text-decoration: none;
-    color: #666666;
+.header__search input[type=submit] {
+    box-sizing: border-box;
+    float: left;
+    width: 45px;
+    height: 46px;
+    border: 1px solid #323232;
+    border-left: none;
+    background: transparent url("../search.png") center center no-repeat;
+    padding: 15px 22px;
+    cursor: pointer;
 }
 
-.head2 {
+@media (max-width: 475px) {
+    .header__search {
+        width: 100%;
+        margin: 20px auto;
+        float: none;
+    }
+    .header__search input[type=search] {
+        width: 80%;
+    }
+
+    .header__search input[type=submit]{
+        width: 20%;
+    }
+}
+.header__menu {
+    float: left;
+    padding-top: 18px;
+    padding-bottom: 39px;
+    margin-left: -22px;
+}
+
+
+.header__menu_item {
+    padding: 22px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+@media (max-width: 710px) {
+    .header__menu_item {
+        display: block;
+        padding: 3px 20px 3px 22px;
+    }
+}
+
+.header__menu_item:hover{
+    color: #be926f;
+}
+
+.header__cart{
     position: relative;
-    margin: 0 auto;
-    width: 1170px;
-    height: 168px;
+    right: 1px;
+    top: -10px;
+    float: right;
+    padding: 20px;
+    margin-top: 31px;
+    margin-right: 0;
+    background: transparent url("../bag.png") center center no-repeat;
 }
 
-.logo {
+.header__cart::before {
     position: absolute;
-    left: 0;
-    top: 31px;
-}
-
-.head2 input {
-    position: absolute;
-    right: 0;
-    top: 31px;
-}
-
-.head2 nav {
-    position: relative;
-    top: 105px;
-}
-
-.bag{
-    position: absolute;
-    display: block;
-    top: 116px;
-    right: 11px;
-}
-
-.counter {
-    position: absolute;
-    right: -10px;
-    top: -5px;
+    display: inline-block;
     height: 18px;
     width: 18px;
+    top: 0px;
+    right: 0px;
     border-radius: 100%;
     background-color: #be926f;
-}
-
-.counter div {
-    position: absolute;
-    left: 5px;
-    top: -3px;
+    content: attr(data-counter);
     font-size: 12px;
     font-weight: 400;
     color: #232323;
+    text-align: center;
+    line-height: 18px;
 }
 
-nav {
-    font-weight: 400;
-    color: #ffffff;
-}
-
-input[type=text] {
-    box-sizing: border-box;
-    background-color: #232323;
-    border-color: #323232;
-    border-width: 1px;
-    width: 275px;
-    height: 46px;
-    color: #666666;
-    padding-left: 1.56rem;
-    border-style:solid;
-}
-
-input:focus {
+input,button:focus {
     outline-width: 0;
 }
 
-form button {
-    position: absolute;
-    right: 12px;
-    top: 44px;
-    border: none;
-    background: none;
-    color: inherit;
-    border: none;
-}
 
-.head2 a {
-    font-weight: 400;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.head2 a+a{
-    margin-left: 45px;
-}
-
-.head2 a:hover {
-    color: #be926f;
-}
