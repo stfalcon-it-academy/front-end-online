@@ -1,13 +1,17 @@
 .body {
     font-family: 'Montserrat', sans-serif;
 }
-.site-width {
+.header__site-width {
     margin: 0 auto;
     padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 @media (min-width: 1200px){
-    .site-width {
+    .header__site-width {
         max-width: 1170px;
     }
 }
@@ -15,12 +19,6 @@
 .link {
     text-decoration: none;
     cursor: pointer;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 .header {
@@ -36,14 +34,12 @@
 }
 
 .header__phone {
-    float: left;
     font-style: normal;
     margin: 5px 0 5px 0;
     color: #7f7f7f;
 }
 
 .header__login-register {
-    float: right;
     margin-top: 5px;
     font-weight: 400;
 }
@@ -59,45 +55,42 @@
 }
 
 .header__logo {
-    float: left;
     padding-top: 31px;
 }
 
 @media (max-width: 475px) {
-    .header__logo img {
-        display: block;
-        margin: 0 auto;
+    .header__site-width {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
     }
     .header__logo {
-        float: none;
+        padding-top: 15px;
     }
 }
 
 .header__search {
-    float: right;
-    margin-top: 31px;
+    box-sizing: border-box;
+    border: 1px #323232 solid;
+    background-color: transparent;
+    width: 280px;
+    height: 46px;
+    display: flex;
 }
 
 .header__search input[type=search] {
-    box-sizing: border-box;
-    background-color: #232323;
-    width: 228px;
-    color: #666666;
+    border: none;
+    background-color: transparent;
     font-size: 0.8125rem;
+    color: #666666;
+    width: 228px;
     padding: 15px;
     padding-left: 24px;
-    border: 1px #323232 solid;
-    float: left;
-    border-right: none;
 }
 
 .header__search input[type=submit] {
-    box-sizing: border-box;
-    float: left;
-    width: 45px;
-    height: 46px;
-    border: 1px solid #323232;
-    border-left: none;
+    border: none;
     background: transparent url("../search.png") center center no-repeat;
     padding: 15px 22px;
     cursor: pointer;
@@ -107,7 +100,6 @@
     .header__search {
         width: 100%;
         margin: 20px auto;
-        float: none;
     }
     .header__search input[type=search] {
         width: 80%;
@@ -118,7 +110,6 @@
     }
 }
 .header__menu {
-    float: left;
     padding-top: 18px;
     padding-bottom: 39px;
     margin-left: -22px;
@@ -146,7 +137,6 @@
     position: relative;
     right: 1px;
     top: -10px;
-    float: right;
     padding: 20px;
     margin-top: 31px;
     margin-right: 0;
@@ -173,5 +163,3 @@
 input,button:focus {
     outline-width: 0;
 }
-
-
