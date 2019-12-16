@@ -28,6 +28,7 @@
 }
 
 .header__top {
+    align-self: flex-start;
     background-color: #2b2b2b;
     font-weight: 300;
     font-size: 0.875rem;
@@ -61,12 +62,11 @@
 @media (max-width: 475px) {
     .header__site-width {
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
-        align-items: center;
     }
     .header__logo {
         padding-top: 15px;
+        margin: 0 auto;
     }
 }
 
@@ -120,6 +120,7 @@
     padding: 22px;
     font-weight: 400;
     color: #ffffff;
+    overflow: hidden;
 }
 
 @media (max-width: 710px) {
