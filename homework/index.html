@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,8 +6,52 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body class="body">
+<header class="header">
+  <div class="header__top">
+    <div class="header__top container">
+      <div class="row">
+        <address class="col"><a href="tel:+123456789" class="header__phone link">(+123) 456 789</a></address>
+        <div class="header__login-register col">
+          <a href="#" class="link login-register__link">Login</a>
+          <span class="login-register__or">or</span>
+          <a href="#" class="link login-register__link">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__site-width container">
+    <div class="row justify-content-center">
+      <div class="header__logo col-12 col-sm-6">
+        <a href="#"><img src="./img/logo.png" alt="logo"></a>
+      </div>
+      <div class="col-12 col-sm-6">
+        <form class="header__search float-sm-right ">
+          <input type="search" placeholder="Search Products" name="Search">
+          <input type="submit" value="">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+        <nav class="header__menu col-11">
+          <a href="#" class="link header__menu_item">Home</a>
+          <a href="#" class="link header__menu_item">Living room</a>
+          <a href="#" class="link header__menu_item">Office</a>
+          <a href="#" class="link header__menu_item">Bedroom</a>
+          <a href="#" class="link header__menu_item">Blog</a>
+          <a href="#" class="link header__menu_item">Contact</a></nav>
+      <div class="col-1">
+        <a href="#" class="header__cart float-right" data-counter="2"></a>
+      </div>
+    </div>
+  </div>
+</header>
 </body>
 </html>
