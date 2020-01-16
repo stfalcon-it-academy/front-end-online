@@ -22,3 +22,28 @@ var c = prompt('Введіть знчення c:');
 
 findX (a, b, c);
 
+
+
+function pow(x, n) {
+    let result = x;
+
+    for (let i = 1; i < n; i++) {
+        result *= x;
+    }
+
+    return result;
+}
+
+let x = prompt("Введіть x", '');
+let n = prompt("Введіть степінь n", '');
+
+    if (n === 0) {
+        let n = 2;
+        alert( pow(x, n) );
+    }
+    else if (n < 0) {
+        alert(`Степінь ${n} не підтримується, використайте натуральне число`);
+    }
+    else {
+        alert( pow(x, n) );
+    }
