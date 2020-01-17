@@ -1,3 +1,4 @@
+/*
 function findX (a, b, c) {
     let D = Math.pow(b, 2) - 4 * a * c;
     if (D > 0) {
@@ -47,3 +48,17 @@ let n = prompt("Введіть степінь n", '');
     else {
         alert( pow(x, n) );
     }
+
+    */
+let obj ={
+  //  name: 'Микола',
+  //  age: 20
+}
+function isEmpty() {
+    for (let key in obj) { // якщо цикл почав виконуватися об'єкт не пустий
+        return alert("об'єкт не пустий", obj);
+    }
+    return alert("об'єкт пустий", obj); //цикл не почався, об'єкт пустий
+}
+
+isEmpty();
